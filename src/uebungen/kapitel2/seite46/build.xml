@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="project" default="junit">
+	<description>
+	</description>
+
+	<target name="junit">
+		<junit printsummary="yes" haltonfailure="no">
+
+			<!-- Im Projektclasspath muss das junit.jar enthalten sein -->
+			<classpath refid="project.path" />
+			<classpath location="${test.classes.dir}" />
+
+			<test name="uebungen.kapitel2.seite46.TaschenrechnerTest" haltonfailure="no" todir="testOutput">
+				<formatter type="plain" />
+				<formatter type="xml" />
+			</test>
+
+		</junit>
+	</target>
+</project>

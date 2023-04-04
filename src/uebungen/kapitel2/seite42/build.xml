@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="project" default="javadoc">
+	<property name="srcDir" value="../src/" />
+	<property name="docDir" value="../javaDoc" />
+
+	<description>
+	</description>
+
+	<target name="javadoc">
+		<delete dir="${docDir}" />
+		<mkdir dir="${docDir}" />
+		<javadoc 
+			sourcepath="${srcDir}" 
+			destdir="${docDir}" 
+			packagenames="*.*" 
+			author="true" 
+			private="true" 
+			version="true" 
+			windowtitle="Software Entwicklung mit Java und JEE">
+				<classpath refid="build.path" />
+		</javadoc>
+	</target>
+</project>
