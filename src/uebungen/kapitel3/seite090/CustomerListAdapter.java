@@ -1,4 +1,4 @@
-package de.swa.swing;
+package uebungen.kapitel3.seite090;
 
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -6,8 +6,8 @@ import javax.swing.JScrollPane;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import de.swa.swing.model.Customer;
-import de.swa.swing.model.CustomerList;
+import uebungen.kapitel3.seite090.model.Customer;
+import uebungen.kapitel3.seite090.model.CustomerList;
 
 public class CustomerListAdapter extends JPanel implements ListSelectionListener {
 	CustomerListModel clm = new CustomerListModel();

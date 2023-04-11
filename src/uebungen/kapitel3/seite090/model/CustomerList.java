@@ -1,4 +1,4 @@
-package de.swa.swing.model;
+package uebungen.kapitel3.seite090.model;
 
 import java.util.Vector;
 

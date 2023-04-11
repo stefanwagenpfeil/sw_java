@@ -1,4 +1,4 @@
-package de.swa.swing;
+package uebungen.kapitel3.seite090;
 
 import java.util.Vector;
 
@@ -6,9 +6,9 @@ import javax.swing.ListModel;
 import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
 
-import de.swa.swing.model.Customer;
-import de.swa.swing.model.CustomerList;
-import de.swa.swing.model.CustomerListener;
+import uebungen.kapitel3.seite090.model.Customer;
+import uebungen.kapitel3.seite090.model.CustomerList;
+import uebungen.kapitel3.seite090.model.CustomerListener;
 
 public class CustomerListModel implements ListModel<Customer>, CustomerListener {
 	private CustomerList model = CustomerList.getInstance();

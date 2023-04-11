@@ -1,4 +1,4 @@
-package de.swa.swing;
+package uebungen.kapitel3.seite090;
 
 import java.awt.GridLayout;
 
@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import de.swa.swing.model.Customer;
+import uebungen.kapitel3.seite090.model.Customer;
 
 public class CustomerDetail extends JPanel {
 	private JTextField vorname = new JTextField(20);
@@ -18,15 +18,15 @@ public class CustomerDetail extends JPanel {
 	public CustomerDetail() {
 		super(new GridLayout(5, 2));
 		
-		add(new JLabel("Vorname"));
+		add(new JLabel(Labels.get("ui.firstName")));
 		add(vorname);
-		add(new JLabel("Name"));
+		add(new JLabel(Labels.get("ui.lastName")));
 		add(name);
-		add(new JLabel("Strasse"));
+		add(new JLabel(Labels.get("ui.street")));
 		add(strasse);
-		add(new JLabel("PLZ"));
+		add(new JLabel(Labels.get("ui.zip")));
 		add(plz);
-		add(new JLabel("Ort"));
+		add(new JLabel(Labels.get("ui.city")));
 		add(ort);
 	}
 	

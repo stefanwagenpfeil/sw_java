@@ -1,4 +1,4 @@
-package de.swa.swing;
+package uebungen.kapitel3.seite090;
 
 import java.awt.BorderLayout;
 
@@ -8,7 +8,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
-import de.swa.swing.model.Customer;
+import uebungen.kapitel3.seite090.model.Customer;
 
 public class CustomerFrame extends JFrame {
 	private CustomerDetail cd = new CustomerDetail();
@@ -41,14 +41,14 @@ public class CustomerFrame extends JFrame {
 	
 	private JMenuBar getMenu() {
 		JMenuBar mb = new JMenuBar();
-		JMenu fileMenu = new JMenu("File");
-		JMenu helpMenu = new JMenu("Help");
+		JMenu fileMenu = new JMenu(Labels.get("menu.file"));
+		JMenu helpMenu = new JMenu(Labels.get("menu.help"));
 		
-		JMenuItem fileOpen = new JMenuItem("New");
-		JMenuItem fileDelete = new JMenuItem("Delete");
-		JMenuItem fileClose = new JMenuItem("Close");
-		JMenuItem fileExit = new JMenuItem("Exit");
-		JMenuItem helpAbout = new JMenuItem("About");
+		JMenuItem fileOpen = new JMenuItem(Labels.get("menu.new"));
+		JMenuItem fileDelete = new JMenuItem(Labels.get("menu.delete"));
+		JMenuItem fileClose = new JMenuItem(Labels.get("menu.close"));
+		JMenuItem fileExit = new JMenuItem(Labels.get("menu.exit"));
+		JMenuItem helpAbout = new JMenuItem(Labels.get("menu.about"));
 		
 		fileMenu.add(fileOpen);
 		fileMenu.add(fileDelete);
