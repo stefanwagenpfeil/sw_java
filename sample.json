@@ -1,0 +1,8 @@
+{
+	"vorname":"Max",
+	"nachname":"Mustermann",
+	"emails":"[
+  		"info@some-company.com",
+  		"me@gmx.de",
+	]
+}
